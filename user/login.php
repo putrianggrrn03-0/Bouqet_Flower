@@ -1,34 +1,45 @@
-<?php include '../config.php'; ?>
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>Login - Bloomy</title>
+    <title>Register - Bloomy</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
-<body class="login d-flex align-items-center vh-100 bg-soft">
+<body class="register-page">
 
-    <div class="container d-flex justify-content-center">
-        <div class="glass-card col-md-4 shadow">
-            <h3 class="text-center text-gold mb-4">Login</h3>
+    <div class="auth-wrapper">
+        <div class="glass-card">
+
+            <div class="auth-header">
+                <h2>Login Account</h2>
+                <p>Join Bloomy and start your floral journey</p>
+            </div>
 
             <form action="process_login.php" method="POST">
-                <div class="mb-3">
-                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+
+                <div class="form-group">
+                    <input type="email" name="email" required>
+                    <label>Email Address</label>
                 </div>
 
-                <div class="mb-3">
-                    <input type="password" name="password" class="form-control" placeholder="Password" required>
+                <div class="form-group">
+                    <input type="password" name="password" required>
+                    <label>Password</label>
                 </div>
 
-                <button class="btn btn-gold w-100">Login</button>
+                <button type="submit" class="btn-auth">
+                    Login Account
+                </button>
+
             </form>
 
-            <p class="text-center mt-3">
-                Don't have account? <a href="register.php">Sign Up</a>
-            </p>
+            <div class="auth-footer">
+                New account?
+                <a href="register.php">register</a>
+            </div>
+
         </div>
     </div>
 
