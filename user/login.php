@@ -34,11 +34,6 @@
                     <label>Password</label>
                 </div>
 
-                 <div class="form-group">
-                    <input type="password" name="confirm_password" required>
-                    <label>Confirm Password</label>
-                </div>
-
                 <button type="submit" class="btn-auth">
                     Create Account
                 </button>
@@ -46,8 +41,8 @@
             </form>
 
             <div class="auth-footer">
-                Already have an account?
-                <a href="login.php">Login</a>
+                Not already have an account?
+                <a href="register.php">Register</a>
             </div>
 
         </div>
